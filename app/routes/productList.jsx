@@ -2,7 +2,9 @@ import { Welcome } from "../welcome/welcome";
 
 
 export default function Home() {
-  return <Welcome />;
+  return <>
+            <h1>product list</h1>
+        </>;
 }
 
 

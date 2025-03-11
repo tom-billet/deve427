@@ -1,0 +1,39 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Ordi",
+        "price": 900,
+        "quantity": 10,
+        "description": "PC Gaming giga performant"
+      },
+      {
+        "id": 2,
+        "name": "Iphone",
+        "price": 699.99,
+        "quantity": 25,
+        "description": "Pas le vrai prix mais bon"
+      },
+      {
+        "id": 3,
+        "name": "Air Pods",
+        "price": 129.99,
+        "quantity": 50,
+        "description": "ca fait un son de fou"
+      },
+      {
+        "id": 4,
+        "name": "Apple Watch",
+        "price": 399.99,
+        "quantity": 15,
+        "description": "Super pour avoir l'heure et son BPM"
+      },
+      {
+        "id": 5,
+        "name": "Ipad",
+        "price": 549.99,
+        "quantity": 30,
+        "description": "Super pour regarder des vidéos de Pierre_315 sur Youtube en grand écran"
+      }
+    ]
+  }

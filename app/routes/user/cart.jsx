@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import CartItems from '../../components/CartItems';
+import Navbar from "../../components/Navbar";
+import '../../app.css';
 
 export default function Cart() {
     const [items, setItems] = useState(() => {
@@ -13,6 +15,8 @@ export default function Cart() {
     console.log(items)
 
     return (
+        <>
+        <Navbar/>
         <div>
             <h1>Panier</h1>
 
@@ -20,5 +24,6 @@ export default function Cart() {
 
             <button>Payer</button>
         </div>
+        </>
     )
 }

@@ -115,3 +115,39 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.navbar {
+  background-color: #007bff;
+  padding: 15px 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffdd57;
+}

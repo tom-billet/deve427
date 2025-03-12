@@ -1,4 +1,6 @@
 import Products from '../../components/Products';
+import Navbar from "../../components/Navbar";
+import '../../app.css';
 
 import { useEffect, useState } from "react";
 
@@ -28,10 +30,13 @@ const ProductList = () => {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="p-6">
       <h1 className="h1">Liste des Produits</h1>
       <Products products={products} addCart={addCart} />
     </div>
+    </>
   );
 };
 

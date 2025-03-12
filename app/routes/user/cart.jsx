@@ -5,6 +5,8 @@ export default function Cart() {
     const [items, setItems] = useState(() => {
         // Essayer de récupérer les produits depuis le localStorage
         const products = localStorage.getItem('cart');
+
+        console.log(products);
     
         //Si des produits sont stockés, on les récupère, sinon on prend un tableau vide
         return products ? JSON.parse(products) : [];

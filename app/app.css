@@ -1,15 +1,117 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+.p-6 {
+  max-width: 1200px;
+  margin: auto;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+.p-4 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 100px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.description {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.prix {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.stock {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+}
+
+.ajoutPanier {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.ajoutPanier:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive : une seule colonne sur petit écran */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }

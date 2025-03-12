@@ -10,8 +10,6 @@ export default function Cart() {
         return products ? JSON.parse(products) : [];
     });
 
-    console.log(items)
-
     return (
         <div>
             <h1>Panier</h1>

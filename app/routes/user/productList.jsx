@@ -13,7 +13,7 @@ const ProductList = () => {
   }, []);
 
   const [items, setItems] = useState(() => {
-    // Essayer de récupérer les produits depuis le localStorage
+    // Essayer de récupérer les produits du panier depuis le localStorage
     const cartItems = localStorage.getItem('cart');
 
     //Si des produits sont stockés, on les récupère, sinon on prend un tableau vide
@@ -22,7 +22,7 @@ const ProductList = () => {
 
   const addCart = (idProduct) => {
     const product = products.find(product => product.id === idProduct);
-    //On ajoute à tasks la nouvelle task grâce à la syntaxe de décomposition
+    //On ajoute au cart le nouveau produit grâce à la syntaxe de décomposition
     const updatedCart = [...items, product];
     localStorage.setItem('cart', JSON.stringify(updatedCart));
   }

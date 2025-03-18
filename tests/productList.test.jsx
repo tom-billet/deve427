@@ -2,6 +2,7 @@ import { expect, test, vi, beforeEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ProductList from "../app/routes/user/productList";  
+import "@testing-library/jest-dom";  
 
 // Mock de localStorage pour chaque test
 beforeEach(() => {

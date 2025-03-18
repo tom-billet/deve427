@@ -7,10 +7,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  server: {allowedHosts: true},
-  plugins: [tailwindcss(), !process.env.VITEST && reactRouter(), tsconfigPaths(), react()],
+  server: { allowedHosts: true },
+  plugins: [
+    tailwindcss(),
+    !process.env.VITEST ? reactRouter() : react(),
+    tsconfigPaths(),
+  ],
   test: {
     globals: true,
-    environment: "jsdom", 
+    environment: "jsdom",
   },
 });

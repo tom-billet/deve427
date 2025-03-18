@@ -7,10 +7,12 @@ export default function Cart() {
         const products = localStorage.getItem('cart');
     
         //Si des produits sont stockés, on les récupère, sinon on prend un tableau vide
-        return products ? JSON.parse(products) : [];
+        try {
+            return products ? JSON.parse(products) : [];
+        } catch (error) {
+            return []; // Retourner un tableau vide en cas d'erreur
+        }
     });
-
-    console.log(items)
 
     return (
         <div>
